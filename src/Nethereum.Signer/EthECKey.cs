@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -206,8 +206,8 @@ namespace Nethereum.Signer
             if (_ethereumAddress == null)
             {
                 var initaddr = new Sha3Keccack().CalculateHash(GetPubKeyNoPrefix());
-                var addr = new byte[initaddr.Length - 12];
-                Array.Copy(initaddr, 12, addr, 0, initaddr.Length - 12);
+                var addr = new byte[initaddr.Length];
+                Array.Copy(initaddr, 0, addr, 0, initaddr.Length);
                 _ethereumAddress = new AddressUtil().ConvertToChecksumAddress(addr.ToHex());
             }
             return _ethereumAddress;
@@ -218,8 +218,8 @@ namespace Nethereum.Signer
             if (_ethereumAddress == null)
             {
                 var initaddr = new Sha3Keccack().CalculateHash(GetPubKeyNoPrefix());
-                var addr = new byte[initaddr.Length - 12];
-                Array.Copy(initaddr, 12, addr, 0, initaddr.Length - 12);
+                var addr = new byte[initaddr.Length];
+                Array.Copy(initaddr, 0, addr, 0, initaddr.Length);
                 return addr;
             }
             return _ethereumAddress.HexToByteArray();
