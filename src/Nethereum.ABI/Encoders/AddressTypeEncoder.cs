@@ -22,13 +22,6 @@ namespace Nethereum.ABI.Encoders
 
             var addr = _intTypeEncoder.Encode(value);
 
-            for (var i = 0; i < 12; i++)
-            {
-                if ((addr[i] != 0) && (addr[i] != 0xFF))
-                    throw new Exception("Invalid address (should be 20 bytes length): " + addr.ToHex());
-
-                if (addr[i] == 0xFF) addr[i] = 0;
-            }
             return addr;
         }
 
@@ -42,9 +35,9 @@ namespace Nethereum.ABI.Encoders
                 && !strValue.StartsWith("0x", StringComparison.Ordinal))
                 value = "0x" + value;
 
-            if (strValue.Length == 42) return strValue.HexToByteArray();
+            if (strValue.Length == 64 + 2) return strValue.HexToByteArray();
 
-            throw new Exception("Invalid address (should be 20 bytes length): " + strValue);
+            throw new Exception("Invalid address (should be 32 bytes length): " + strValue);
         }
     }
 }
