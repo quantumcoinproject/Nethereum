@@ -31,7 +31,7 @@ namespace Nethereum.Util
     {
         private static AddressUtil _current;
         public const string AddressEmptyAsHex = "0x0";
-        public const string ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
+        public const string ZERO_ADDRESS = "0x0000000000000000000000000000000000000000000000000000000000000000";
 
         public static AddressUtil Current
         {
@@ -44,14 +44,7 @@ namespace Nethereum.Util
 
         public string ConvertToChecksumAddress(byte[] address)
         {
-            if (address.Length > 20)
-            {
-                return ConvertToChecksumAddress(address.Skip(address.Length - 20).ToArray().ToHex());
-            }
-            else
-            {
-                return ConvertToChecksumAddress(address.ToHex());
-            }
+            return ConvertToChecksumAddress(address.ToHex());
         }
 
         public bool IsAnEmptyAddress(string address)
@@ -107,18 +100,18 @@ namespace Nethereum.Util
         {
             if (address == null) address = string.Empty;
             address = address.RemoveHexPrefix();
-            return address.PadLeft(40, '0').EnsureHexPrefix();
+            return address.PadLeft(64, '0').EnsureHexPrefix();
         }
 
         public bool IsValidAddressLength(string address)
         {
             if (string.IsNullOrEmpty(address)) return false;
             address = address.RemoveHexPrefix();
-            return address.Length == 40;
+            return address.Length == 64;
         }
 
         /// <summary>
-        /// Validates if the hex string is 40 alphanumeric characters
+        /// Validates if the hex string is 64 alphanumeric characters
         /// </summary>
         public bool IsValidEthereumAddressHexFormat(string address)
         {
@@ -133,7 +126,7 @@ namespace Nethereum.Util
             address = address.RemoveHexPrefix();
             var addressHash = new Sha3Keccack().CalculateHash(address.ToLower());
 
-            for (var i = 0; i < 40; i++)
+            for (var i = 0; i < 64; i++)
             {
                 var value = int.Parse(addressHash[i].ToString(), NumberStyles.HexNumber);
                 // the nth letter should be uppercase if the nth digit of casemap is 1
