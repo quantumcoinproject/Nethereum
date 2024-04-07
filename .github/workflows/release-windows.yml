@@ -21,14 +21,14 @@ jobs:
         dotnet-version: 8.0.x
     - name: Run
       run: 
-         cd src && nuget.bat
+         cd ${{ github.workspace }}\src && dir && ${{ github.workspace }}\src\nuget.bat
 
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v3
       with:
         name: Nethereum
         path: |
-              ${{ github.workspace }}/build/*.*
+              ${{ github.workspace }}/src/compiledlibraries/*.*
   
     - name: Release
       uses: ncipollo/release-action@v1
