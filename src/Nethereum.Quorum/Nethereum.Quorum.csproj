@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Quorum</AssemblyName>
-    <PackageId>Nethereum.Quorum</PackageId>
+    <PackageId>NethereumQuantum.Quorum</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png</PackageIconUrl>
     <PackageProjectUrl>http://www.nethereum.com</PackageProjectUrl>

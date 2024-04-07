@@ -6,7 +6,7 @@
 		<Version>$(NethereumVersion)</Version>
 		<TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
 		<AssemblyName>Nethereum.ABI</AssemblyName>
-		<PackageId>Nethereum.ABI</PackageId>
+		<PackageId>NethereumQuantum.ABI</PackageId>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Nethereum.Hex\Nethereum.Hex.csproj" />

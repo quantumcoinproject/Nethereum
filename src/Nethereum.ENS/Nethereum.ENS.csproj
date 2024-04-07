@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(ENSFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.ENS</AssemblyName>
-    <PackageId>Nethereum.ENS</PackageId>
+    <PackageId>NethereumQuantum.ENS</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

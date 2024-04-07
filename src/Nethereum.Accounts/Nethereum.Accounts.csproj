@@ -6,7 +6,7 @@
     <Version>$(NethereumVersion)</Version>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Accounts</AssemblyName>
-    <PackageId>Nethereum.Accounts</PackageId>
+    <PackageId>NethereumQuantum.Accounts</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 

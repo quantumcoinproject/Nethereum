@@ -7,7 +7,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Rsk</AssemblyName>
-    <PackageId>Nethereum.Rsk</PackageId>
+    <PackageId>NethereumQuantum.Rsk</PackageId>
     <PackageTags>Netherum;Rsk;Bitcoin;Rsk;Ethereum;Blockchain</PackageTags>
   </PropertyGroup>
   <ItemGroup>

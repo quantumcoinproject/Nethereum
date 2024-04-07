@@ -8,7 +8,7 @@
 		<Version>$(NethereumVersion)</Version>
 		<TargetFrameworks>$(UIFrameworksCore);netstandard2.0;net472</TargetFrameworks>
 		<AssemblyName>Nethereum.Metamask</AssemblyName>
-		<PackageId>Nethereum.Metamask</PackageId>
+		<PackageId>NethereumQuantum.Metamask</PackageId>
 		<PackageTags>Netherum;Metamask;Ethereum;Blockchain</PackageTags>
 		<LangVersion>preview</LangVersion>
 	</PropertyGroup>

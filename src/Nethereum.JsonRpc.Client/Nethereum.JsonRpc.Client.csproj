@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
     <AssemblyName>Nethereum.JsonRpc.Client</AssemblyName>
-    <PackageId>Nethereum.JsonRpc.Client</PackageId>
+    <PackageId>NethereumQuantum.JsonRpc.Client</PackageId>
     <PackageTags>Json;RPC</PackageTags>
   </PropertyGroup>
 

@@ -7,7 +7,7 @@
 		<Version>$(NethereumVersion)</Version>
 		<TargetFrameworks>$(UIFrameworks)</TargetFrameworks>
 		<AssemblyName>Nethereum.UI</AssemblyName>
-		<PackageId>Nethereum.UI</PackageId>
+		<PackageId>NethereumQuantum.UI</PackageId>
 		<PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
 	</PropertyGroup>
 

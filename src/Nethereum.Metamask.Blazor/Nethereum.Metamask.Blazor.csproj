@@ -8,7 +8,7 @@
 		<Version>$(NethereumVersion)</Version>
 		<TargetFrameworks>$(UIFrameworksBlazor)</TargetFrameworks>
 		<AssemblyName>Nethereum.Metamask.Blazor</AssemblyName>
-		<PackageId>Nethereum.Metamask.Blazor</PackageId>
+		<PackageId>NethereumQuantum.Metamask.Blazor</PackageId>
 		<PackageTags>Netherum;Metamask;Ethereum;Blockchain</PackageTags>
 	</PropertyGroup>
 
