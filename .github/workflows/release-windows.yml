@@ -1,0 +1,35 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    - name: Run
+      run: 
+         cd src && nuget.bat
+
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v3
+      with:
+        name: Nethereum
+        path: |
+              ${{ github.workspace }}/build/*.*
+  
+    - name: Release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        artifacts: "src/packages/*.*,src/compiledlibraries/*.*"              
