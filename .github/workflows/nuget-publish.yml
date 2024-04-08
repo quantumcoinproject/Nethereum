@@ -15,7 +15,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Run
-      run: 
+      run: |
          cd ${{ github.workspace }}\src 
          ${{ github.workspace }}\src\nuget.bat
          cd ${{ github.workspace }}\src\packages
