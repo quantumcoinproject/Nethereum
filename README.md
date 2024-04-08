@@ -1,7 +1,7 @@
 # :warning: **This Doge Protocol fork of Nethereum has been edited to support 32 byte addresses, compared to Ethereum's 20 bytes**
 > 
 # Nethereum
- [![Documentation Status](https://readthedocs.org/projects/nethereum/badge/?version=latest)](https://nethereum.readthedocs.io/en/latest/) [![NuGet version](https://badge.fury.io/nu/nethereum.web3.svg)](https://badge.fury.io/nu/nethereum.web3)
+ [![NuGet version](https://badge.fury.io/nu/nethereumquantum.web3.svg)](https://badge.fury.io/nu/nethereumquantum.web3)
 
 Technical support, chat and collaboration at Discord: https://discord.gg/u3Ej2BReNn
 
