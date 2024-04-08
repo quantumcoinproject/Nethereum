@@ -8,7 +8,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(HdWalletFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.HdWallet</AssemblyName>
-    <PackageId>Nethereum.HdWallet</PackageId>
+    <PackageId>NethereumQuantum.HdWallet</PackageId>
     <PackageTags>Nethereum;Ethereum;Blockchain;HdWallet</PackageTags>
   </PropertyGroup>
   <ItemGroup>

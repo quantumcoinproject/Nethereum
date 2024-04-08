@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
     <AssemblyName>Nethereum.RPC.Extensions</AssemblyName>
-    <PackageId>Nethereum.RPC.Extensions</PackageId>
+    <PackageId>NethereumQuantum.RPC.Extensions</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 

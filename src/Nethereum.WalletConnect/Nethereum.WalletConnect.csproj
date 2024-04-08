@@ -8,7 +8,7 @@
 		<Version>$(NethereumVersion)</Version>
 		<TargetFrameworks>netstandard2.1;net6.0;</TargetFrameworks>
 		<AssemblyName>Nethereum.WalletConnect</AssemblyName>
-		<PackageId>Nethereum.WalletConnect</PackageId>
+		<PackageId>NethereumQuantum.WalletConnect</PackageId>
 		<PackageTags>Netherum;WalletConnect;Ethereum;Blockchain</PackageTags>
 		<LangVersion>preview</LangVersion>
 	</PropertyGroup>

@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>net60</TargetFrameworks>
     <AssemblyName>Nethereum.Signer.AWSKeyManagement</AssemblyName>
-    <PackageId>Nethereum.Signer.AWSKeyManagement</PackageId>
+    <PackageId>NethereumQuantum.Signer.AWSKeyManagement</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;AWSKeyManagement</PackageTags>
   </PropertyGroup>
 

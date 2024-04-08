@@ -7,7 +7,7 @@
     <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
     <OutputType>Library</OutputType>
     <AssemblyName>Nethereum.Hex</AssemblyName> 
-    <PackageId>Nethereum.Hex</PackageId>
+    <PackageId>NethereumQuantum.Hex</PackageId>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>

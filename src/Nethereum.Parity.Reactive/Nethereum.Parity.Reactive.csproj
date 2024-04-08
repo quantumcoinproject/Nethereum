@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(ReactiveFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Parity.Reactive</AssemblyName>
-    <PackageId>Nethereum.Parity.Reactive</PackageId>
+    <PackageId>NethereumQuantum.Parity.Reactive</PackageId>
     <PackageTags>Json;RPC;Reactive;Ethereum;Nethereum;Parity</PackageTags>
   </PropertyGroup>
   <ItemGroup>

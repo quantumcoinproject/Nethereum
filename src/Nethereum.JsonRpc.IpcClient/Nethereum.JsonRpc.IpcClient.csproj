@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(IpcWebSocketsFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.JsonRpc.IpcClient</AssemblyName>
-    <PackageId>Nethereum.JsonRpc.IpcClient</PackageId>
+    <PackageId>NethereumQuantum.JsonRpc.IpcClient</PackageId>
     <PackageTags>Json;RPC</PackageTags>
   </PropertyGroup>
   <ItemGroup>

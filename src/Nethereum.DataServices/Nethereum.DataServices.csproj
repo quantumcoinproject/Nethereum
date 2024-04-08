@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.DataServices</AssemblyName>
-    <PackageId>Nethereum.DataServices</PackageId>
+    <PackageId>NethereumQuantum.DataServices</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Etherscan</PackageTags>
 	<SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
   </PropertyGroup>

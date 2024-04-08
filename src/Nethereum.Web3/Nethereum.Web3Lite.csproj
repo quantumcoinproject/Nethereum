@@ -7,7 +7,7 @@
     <Version>$(NethereumVersion)</Version>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Web3Lite</AssemblyName>
-    <PackageId>Nethereum.Web3Lite</PackageId>
+    <PackageId>NethereumQuantum.Web3Lite</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 

@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.StandardNonFungibleTokenERC721</AssemblyName>
-    <PackageId>Nethereum.StandardNonFungibleTokenERC721</PackageId>
+    <PackageId>NethereumQuantum.StandardNonFungibleTokenERC721</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 

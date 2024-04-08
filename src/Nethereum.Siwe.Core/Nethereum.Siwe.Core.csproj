@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
     <AssemblyName>Nethereum.Siwe.Core</AssemblyName>
-    <PackageId>Nethereum.Siwe.Core</PackageId>
+    <PackageId>NethereumQuantum.Siwe.Core</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Siwe</PackageTags>
 	  <LangVersion>preview</LangVersion>
   </PropertyGroup>

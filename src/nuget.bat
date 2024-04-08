@@ -198,13 +198,13 @@ cd ..
 setlocal
 set DIR=%~dp0
 set OUTPUTDIR=%~dp0\packages
-for /R %DIR% %%a in (*.nupkg) do xcopy "%%a" "%OUTPUTDIR%"
-xcopy *.nupkg packages /s /y
+for /R %DIR% %%a in (*.nupkg) do xcopy "%%a" "%OUTPUTDIR%\" /s /y
 
-for /R %DIR% %%a in (*.snupkg) do xcopy "%%a" "%OUTPUTDIR%"
-xcopy *.snupkg packages /s /y
 
-EXIT /B %ERRORLEVEL%
+for /R %DIR% %%a in (*.snupkg) do xcopy "%%a" "%OUTPUTDIR%\" /s /y
+
+EXIT /B 0
+
 
 :restorepack
 dotnet restore %projectName% /property:ReleaseSuffix=%releaseSuffix% /property:TargetNet35=%targetNet35%

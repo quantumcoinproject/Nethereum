@@ -7,7 +7,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Besu</AssemblyName>
-    <PackageId>Nethereum.Besu</PackageId>
+    <PackageId>NethereumQuantum.Besu</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Besu</PackageTags>
   </PropertyGroup>
   <ItemGroup>

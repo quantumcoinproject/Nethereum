@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(ExternalSignerFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.Signer.Ledger</AssemblyName>
-    <PackageId>Nethereum.Signer.Ledger</PackageId>
+    <PackageId>NethereumQuantum.Signer.Ledger</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Ledger</PackageTags>
 	 <LangVersion>preview</LangVersion>
   </PropertyGroup>

@@ -7,7 +7,7 @@
     <Version>$(NethereumVersion)</Version>
     <TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
     <AssemblyName>Nethereum.BlockchainProcessing</AssemblyName>
-    <PackageId>Nethereum.BlockchainProcessing</PackageId>
+    <PackageId>NethereumQuantum.BlockchainProcessing</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 

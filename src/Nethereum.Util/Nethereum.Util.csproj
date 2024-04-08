@@ -6,7 +6,7 @@
     <VersionPrefix>$(NethereumVersion)</VersionPrefix>
     <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
     <AssemblyName>Nethereum.Util</AssemblyName>
-    <PackageId>Nethereum.Util</PackageId>
+    <PackageId>NethereumQuantum.Util</PackageId>
     <PackageTags>Netherum;Ethereum;Blockchain</PackageTags>
   </PropertyGroup>
 

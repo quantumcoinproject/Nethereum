@@ -6,7 +6,7 @@
 	<Version>$(NethereumVersion)</Version>
 	<TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
 	<AssemblyName>Nethereum.EVM.Contracts</AssemblyName>
-	<PackageId>Nethereum.EVM.Contracts</PackageId>
+	<PackageId>NethereumQuantum.EVM.Contracts</PackageId>
 	<PackageTags>Netherum;Ethereum;Blockchain;EVM</PackageTags>
 </PropertyGroup>
 <ItemGroup>
