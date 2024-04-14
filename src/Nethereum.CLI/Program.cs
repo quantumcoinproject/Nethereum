@@ -1,4 +1,4 @@
-﻿using Nethereum.Web3;
+using Nethereum.Web3;
 using Nethereum.JsonRpc.IpcClient;
 using Nethereum.Hex.HexTypes;
 using Nethereum.RPC.Eth.DTOs;
@@ -10,7 +10,7 @@ namespace CLI
     {
         static IWeb3 web3;
 
-        static async void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var clientConnString = Environment.GetEnvironmentVariable("CLIENT_CONNECTION_STRING");
             if(clientConnString == null)
