@@ -117,7 +117,9 @@
         wallet_switchEthereumChain,
         wallet_watchAsset,
         eth_signTypedData_v4,
-        personal_sign
-     
+        personal_sign,
+
+        //ProofOfStake
+        eth_getStakingDetails,
     }
 }

@@ -10,7 +10,9 @@
     <Version>$(NethereumVersion)</Version>
     <AssemblyName>Nethereum.Fx</AssemblyName>
     <PackageId>Nethereum.Fx</PackageId>
-	  <LangVersion>preview</LangVersion>
+    <LangVersion>preview</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>  
   </PropertyGroup>
 
   <ItemGroup>
