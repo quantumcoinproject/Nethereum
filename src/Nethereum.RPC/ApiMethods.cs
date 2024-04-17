@@ -120,6 +120,6 @@
         personal_sign,
 
         //ProofOfStake
-        eth_getStakingDetails,
+        proofofstake_getStakingDetails,
     }
 }

@@ -29,8 +29,11 @@ namespace CLI
                 web3 = new Web3(clientConnString);
             }
 
-            var block = await GetLatestBlockNumerAsync();
-            Console.WriteLine("Latest Block {0}", block);
+            var blockNumber = await GetLatestBlockNumerAsync();
+            Console.WriteLine("Latest Block {0}", blockNumber);
+
+            var block = await web3.Eth.Blocks.GetBlockWithTransactionsByNumber.SendRequestAsync(new HexBigInteger("0x1"));
+            Console.WriteLine("Block 1", block);
 
             var stakingDetails = await GetLatestStakingDetails();
             Console.WriteLine("Latest Staking Details:");

@@ -9,7 +9,7 @@ using Nethereum.RPC.Infrastructure;
 namespace Nethereum.RPC.Eth.ProofOfStake
 {
     /// <Summary>
-    ///     eth_getStakingDetails
+    ///     proofofstake_getStakingDetails
     ///     Returns the staking details.
     ///     Parameters
     ///     none
@@ -17,11 +17,11 @@ namespace Nethereum.RPC.Eth.ProofOfStake
     ///     StakingDetails - details of proof of stake staking.
     ///     Example
     ///     Request
-    ///     curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getStakingDetails","params":[],"id":83}'
+    ///     curl -X POST --data '{"jsonrpc":"2.0","method":"proofofstake_getStakingDetails","params":[],"id":83}'
     /// </Summary>
     public class EthStakingDetails : GenericRpcRequestResponseHandlerNoParam<StakingDetails>, IEthGetStakingDetails
     {
-        public EthStakingDetails(IClient client) : base(client, ApiMethods.eth_getStakingDetails.ToString())
+        public EthStakingDetails(IClient client) : base(client, ApiMethods.proofofstake_getStakingDetails.ToString())
         {
         }
     }
