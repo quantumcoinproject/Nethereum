@@ -32,10 +32,8 @@ namespace CLI
             var blockNumber = await GetLatestBlockNumerAsync();
             Console.WriteLine("Latest Block {0}", blockNumber);
 
-            var block = await web3.Eth.Blocks.GetBlockWithTransactionsByNumber.SendRequestAsync(new HexBigInteger("0x1"));
-            Console.WriteLine("Block 1", block);
 
-            var stakingDetails = await GetLatestStakingDetails();
+            var stakingDetails = await GetLatestStakingDetails(blockNumber);
             Console.WriteLine("Latest Staking Details:");
             Console.Write(JsonConvert.SerializeObject(stakingDetails,Formatting.Indented));
         }
@@ -46,9 +44,9 @@ namespace CLI
             return res;
         }
 
-        public static async Task<StakingDetails> GetLatestStakingDetails()
+        public static async Task<StakingDetails> GetLatestStakingDetails(HexBigInteger blockNumber)
         {
-            var res = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync();
+            var res = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync(new HexBigInteger(2));
             return res;
         }
     }

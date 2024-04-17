@@ -11,10 +11,9 @@ namespace Nethereum.RPC.Eth.Services
     {
         public EthApiProofOfStakeService(IClient client) : base(client)
         {
-            GetStakingDetails = new EthStakingDetails(client);
+            GetStakingDetails = new ProofOfStakeStakingDetails(client);
         }
 
-        public IEthGetStakingDetails GetStakingDetails { get; }
-
+        public IProofOfStakeGetStakingDetails GetStakingDetails { get; }
     }
 }
