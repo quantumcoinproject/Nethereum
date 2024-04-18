@@ -254,10 +254,6 @@ SOFTWARE.
             this.JsonRpcVersion = "2.0";
             this.Method = method;
             this.RawParameters = parameterList;
-            for(var i = 0;i < parameterList.Length;i++)
-            {
-                Console.WriteLine(parameterList[i].ToString());
-            }
         }
 
         /// <param name="id">Request id</param>
