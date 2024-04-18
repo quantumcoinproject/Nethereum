@@ -5,7 +5,7 @@
 1) To get the staking details such as list of validators, their mined coins, deposited coins, etc.:
 
 ```
-var stakingDetails = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync();
+var stakingDetails = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync(blockNumber);
 ```
 
 2) To get a block's consensus data:
