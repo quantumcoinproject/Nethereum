@@ -195,6 +195,10 @@ cd Nethereum.WalletConnect
 CALL :restorepack
 cd ..
 
+cd Nethereum.CLI
+CALL :restorepack
+cd ..
+
 setlocal
 set DIR=%~dp0
 set OUTPUTDIR=%~dp0\packages

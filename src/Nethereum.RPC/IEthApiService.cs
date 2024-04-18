@@ -36,6 +36,8 @@ namespace Nethereum.RPC
         IEthCreateAccessList CreateAccessList { get; }
         IEthChainProofValidationService ChainProofValidation { get; }
 
+        IEthApiProofOfStakeService ProofOfStake { get; }
+
 #if !DOTNET35
         IEtherTransferService GetEtherTransferService();
 #endif
