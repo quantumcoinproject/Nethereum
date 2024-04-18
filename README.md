@@ -1,5 +1,19 @@
 # :warning: **This Doge Protocol fork of Nethereum has been edited to support 32 byte addresses, compared to Ethereum's 20 bytes**
 > 
+## Enhancements over Nethereum
+
+1) To get the staking details such as list of validators, their mined coins, deposited coins, etc.:
+
+```
+var stakingDetails = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync();
+```
+
+2) To get a block's consensus data:
+
+```
+var blockConsensusData = await web3.Eth.ProofOfStake.GetBlockConsensusData.SendRequestAsync(blockNumber);
+```
+
 # Nethereum
  [![NuGet version](https://badge.fury.io/nu/nethereumquantum.web3.svg)](https://badge.fury.io/nu/nethereumquantum.web3)
 
@@ -54,21 +68,21 @@ To install the latest version:
 To install the main packages you can either:
 
 ```
-PM > Install-Package Nethereum.Web3
+PM > Install-Package NethereumQuantum.Web3
 ```
 or 
 ```
-PM > Install-Package Nethereum.Portable
+PM > Install-Package NethereumQuantum.Portable
 ```
 
 #### Mac/Linux users
 
 ```
-dotnet add package Nethereum.Web3 
+dotnet add package NethereumQuantum.Web3 
 ``` 
 or 
 ```
-dotnet add package Nethereum.Portable
+dotnet add package NethereumQuantum.Portable
 ```
 
 
