@@ -9,5 +9,7 @@ namespace Nethereum.RPC.Eth.Services
     public interface IEthApiProofOfStakeService
     {
         IProofOfStakeGetStakingDetails GetStakingDetails { get; }
+
+        IProofOfStakeGetBlockConsensusData GetBlockConsensusData { get; }
     }
 }

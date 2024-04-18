@@ -36,6 +36,10 @@ namespace CLI
             var stakingDetails = await GetLatestStakingDetails(blockNumber);
             Console.WriteLine("Latest Staking Details:");
             Console.Write(JsonConvert.SerializeObject(stakingDetails,Formatting.Indented));
+
+            var blockConsensusData = await web3.Eth.ProofOfStake.GetBlockConsensusData.SendRequestAsync(blockNumber);
+            Console.WriteLine("Latest BlockConsensusData:");
+            Console.Write(JsonConvert.SerializeObject(blockConsensusData, Formatting.Indented));
         }
 
         public static async Task<HexBigInteger> GetLatestBlockNumerAsync()
@@ -46,7 +50,7 @@ namespace CLI
 
         public static async Task<StakingDetails> GetLatestStakingDetails(HexBigInteger blockNumber)
         {
-            var res = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync(new HexBigInteger(2));
+            var res = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync(blockNumber);
             return res;
         }
     }
