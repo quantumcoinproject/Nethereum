@@ -54,6 +54,6 @@ namespace Nethereum.RPC.Eth.DTOs
         /// Withdrawal Block
         /// </summary>
         [JsonProperty(PropertyName = "withdrawalBlock")]
-        public HexBigInteger Value { get; set; }
+        public HexBigInteger WithdrawalBlock { get; set; }
     }
 }
