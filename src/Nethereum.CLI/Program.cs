@@ -37,6 +37,14 @@ namespace CLI
             Console.WriteLine("Latest Staking Details:");
             Console.Write(JsonConvert.SerializeObject(stakingDetails,Formatting.Indented));
 
+            var validatorDetails1 = await web3.Eth.ProofOfStake.GetStakingDetailsByValidator.SendRequestAsync(stakingDetails.Validators[0].Validator, blockNumber);
+            Console.WriteLine("Staking Details by Validator:");
+            Console.Write(JsonConvert.SerializeObject(validatorDetails1, Formatting.Indented));
+
+            var validatorDetails2 = await web3.Eth.ProofOfStake.GetStakingDetailsByDepositor.SendRequestAsync(stakingDetails.Validators[0].Depositor, blockNumber);
+            Console.WriteLine("Staking Details by Depositor:");
+            Console.Write(JsonConvert.SerializeObject(validatorDetails2, Formatting.Indented));
+
             var blockConsensusData = await web3.Eth.ProofOfStake.GetBlockConsensusData.SendRequestAsync(blockNumber);
             Console.WriteLine("Latest BlockConsensusData:");
             Console.Write(JsonConvert.SerializeObject(blockConsensusData, Formatting.Indented));
