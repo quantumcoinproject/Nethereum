@@ -8,7 +8,19 @@
 var stakingDetails = await web3.Eth.ProofOfStake.GetStakingDetails.SendRequestAsync(blockNumber);
 ```
 
-2) To get a block's consensus data:
+2) To get staking details by a validator address:
+   
+```
+var validatorDetails = await web3.Eth.ProofOfStake.GetStakingDetailsByValidator.SendRequestAsync(validatorAddress, blockNumber);
+```
+
+3) To get staking details by a depositor address:
+   
+```
+var validatorDetails = await web3.Eth.ProofOfStake.GetStakingDetailsByDepositor.SendRequestAsync(depositorAddress, blockNumber);
+```
+
+4) To get a block's consensus data:
 
 ```
 var blockConsensusData = await web3.Eth.ProofOfStake.GetBlockConsensusData.SendRequestAsync(blockNumber);

@@ -12,5 +12,8 @@ namespace Nethereum.RPC.Eth.DTOs
 
         [JsonProperty(PropertyName = "extendedConsensusPackets")]
         public ExtendedConsensusPacket[] ExtendedConsensusPackets { get; set; }
+
+        [JsonProperty(PropertyName = "blockProposerRewards")]
+        public string BlockProposerRewards { get; set; }
     }
 }
