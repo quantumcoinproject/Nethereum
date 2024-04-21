@@ -10,6 +10,10 @@ namespace Nethereum.RPC.Eth.Services
     {
         IProofOfStakeGetStakingDetails GetStakingDetails { get; }
 
+        IProofOfStakeGetStakingDetailsByValidator GetStakingDetailsByValidator { get; }
+
+        IProofOfStakeGetStakingDetailsByDepositor GetStakingDetailsByDepositor { get; }
+
         IProofOfStakeGetBlockConsensusData GetBlockConsensusData { get; }
     }
 }

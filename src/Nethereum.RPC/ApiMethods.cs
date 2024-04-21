@@ -121,6 +121,8 @@
 
         //ProofOfStake
         proofofstake_getStakingDetails,
-        proofofstake_getBlockConsensusData
+        proofofstake_getBlockConsensusData,
+        proofofstake_getStakingDetailsByValidatorAddress,
+        proofofstake_getStakingDetailsByDepositorAddress
     }
 }

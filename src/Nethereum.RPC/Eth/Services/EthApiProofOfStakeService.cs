@@ -13,9 +13,15 @@ namespace Nethereum.RPC.Eth.Services
         {
             GetStakingDetails = new ProofOfStakeStakingDetails(client);
             GetBlockConsensusData = new ProofOfStakeGetBlockConsensusData(client);
+            GetStakingDetailsByValidator = new ProofOfStakeStakingDetailsByValidator(client);
+            GetStakingDetailsByDepositor = new ProofOfStakeStakingDetailsByDepositor(client);
         }
 
         public IProofOfStakeGetStakingDetails GetStakingDetails { get; }
+
+        public IProofOfStakeGetStakingDetailsByValidator GetStakingDetailsByValidator { get; }
+
+        public IProofOfStakeGetStakingDetailsByDepositor GetStakingDetailsByDepositor { get; }
 
         public IProofOfStakeGetBlockConsensusData GetBlockConsensusData { get; }
     }
