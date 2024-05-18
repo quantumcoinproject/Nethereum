@@ -55,5 +55,23 @@ namespace Nethereum.RPC.Eth.DTOs
         /// </summary>
         [JsonProperty(PropertyName = "withdrawalBlock")]
         public HexBigInteger WithdrawalBlock { get; set; }
+
+        /// <summary>
+        /// Withdrawal Amount
+        /// </summary>
+        [JsonProperty(PropertyName = "withdrawalAmount")]
+        public HexBigInteger WithdrawalAmount { get; set; }
+
+        /// <summary>
+        /// Last NIL block
+        /// </summary>
+        [JsonProperty(PropertyName = "lastNilBlock")]
+        public HexBigInteger LastNiLBlock { get; set; }
+
+        /// <summary>
+        /// NIL Block Count
+        /// </summary>
+        [JsonProperty(PropertyName = "NilBlockCount")]
+        public HexBigInteger NilBlockCount { get; set; }
     }
 }
