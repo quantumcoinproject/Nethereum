@@ -1,6 +1,6 @@
-# :warning: **This Doge Protocol fork of Nethereum has been edited to support 32 byte addresses, compared to Ethereum's 20 bytes**
+# :warning: **This Quantum Coin fork of Nethereum has been edited to support 32 byte addresses, compared to Ethereum's 20 bytes**
 > 
-## APIs specific to Doge Protocol
+## APIs specific to Quantum Coin
 
 1) To get the staking details such as list of validators, their mined coins, deposited coins, etc.:
 
